@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.coin-app {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 300px 50px 300px;
+}
+
+.coin-row {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.coin-img img {
+  height: 30px;
+  width: 30px;
+  padding: 10px;
+}
+.coin-row h1 {
+  font-weight: 500;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.coin-data span {
+}
