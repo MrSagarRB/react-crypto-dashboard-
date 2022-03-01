@@ -32,16 +32,20 @@ function App() {
   return (
     <div className="coin-app">
       <div className="coin-search">
-        <form>
+        <form className="coin-input">
           <TextField
             id="outlined-basic"
             label="Search"
             variant="outlined"
-            className="coin-input"
             placeholder="Coin Name"
             onChange={handleChange}
+            className="coin-input-fild"
           />
         </form>
+        <div>
+          <span>Coin</span>
+          <span>Price</span>
+        </div>
       </div>
       {filteredCoin.map((coin) => {
         return (

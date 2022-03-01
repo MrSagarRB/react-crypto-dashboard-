@@ -12,11 +12,15 @@ const Coin = ({
   return (
     <div className="coin-container">
       <div className="coin-row">
-        <div className="coin-img">
-          <img src={image} alt="crypto" />
+        <div className="header">
+          <div className="coin-img">
+            <img src={image} alt="crypto" />
+          </div>
+
+          <h1>{name}</h1>
+          <span className="coin-symbol"> {symbol}</span>
         </div>
-        <h1>{name}</h1>
-        <span className="coin-symbol"> {symbol}</span>
+
         <div className="coin-data">
           <span className="coin-price"> ${price}</span>
           <span className="coin-volume">${volume.toLocaleString()}</span>
